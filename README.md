@@ -11,21 +11,21 @@ This Calculator has the ability to do any calculation required.
 
 ## Installation
 
-This Apllication require angular and spring boot installation
-Install the Angular CLI
+This Apllication require angular and spring boot installation.
+##### Install the Angular CLI
 ```sh
 npm install -g @angular/cli
 ```
-Create a workspace and initial application
+##### Create a workspace and initial application
 ```sh
 ng new my-app
 ```
-Run the application
+##### Run the application
 ```sh
 cd my-app
 ng serve --open
 ```
-spring boot installation
+##### spring boot installation
 Follow This link:
 [https://spring.io/guides/gs/spring-boot/]
 
