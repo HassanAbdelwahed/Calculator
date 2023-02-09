@@ -1,0 +1,97 @@
+<style>
+  
+  .main{
+    margin: auto;
+    margin-top: 50px;
+    width: 20%;
+    color: white;
+    
+  }
+  .screen{
+    width: auto;
+  
+    background-color: rgb(27, 23, 23);
+    padding: 5px;
+    font-size: 20px;
+  }
+  button{
+    width: 25%;
+    height: 60px;
+    color: white;
+    font-size: 18px;
+    border-color: rgb(27, 23, 23);
+    background-color: rgb(44, 39, 39);
+  }
+  
+  .input{
+    min-height: 35px;
+    
+  }
+  .output{
+    min-height: 35px;
+    
+  }
+
+  h1{
+    margin: auto;
+    text-align: center;
+    font-style: italic;
+    font-size: 50px;
+    
+  }
+</style>
+
+<div>
+  <h1>Calculator</h1>
+</div>
+<div class="main" id = 'main'>
+  <div class="screen">
+    <div class="input">{{Input}}</div>
+    <div class="output">{{result}}</div>
+  </div>
+
+  <div class="_buuton">
+    <button class = 'buttToDis' type="button" (click) = "operationChosen('module', '%')">&#37;</button>
+    <button type="button" (click) = "clear()">CE</button>
+    <button type="button" (click) = "clear()">C</button>
+    <button class = 'buttToDis' type="button" (click) = "undo()">d</button>
+  </div>
+
+  <div class="_buuton">
+    <button class = 'buttToDis' type="button" (click) = "operationChosen('reverse', '')">1/x</button>
+    <button class = 'buttToDis' type="button" (click) = "operationChosen('power2', '')">x^2</button>
+    <button class = 'buttToDis' type="button" (click) = "operationChosen('root2', '')">&#8730;x</button>
+    <button class = 'buttToDis' type="button" (click) = "operationChosen('division', '/')">&#247;</button>
+  </div>
+
+
+  <div class="_buuton">
+    <button type="button" (click)="nubmerClicked('7')">7</button>
+    <button type="button" (click)="nubmerClicked('8')">8</button>
+    <button type="button" (click)="nubmerClicked('9')">9</button>
+    <button class = 'buttToDis' type="button" (click) = "operationChosen('multiply', 'x')">&#215;</button>
+  </div>
+
+  <div class="_buuton">
+    <button type="button" (click)="nubmerClicked('4')">4</button>
+    <button type="button" (click)="nubmerClicked('5')">5</button>
+    <button type="button" (click)="nubmerClicked('6')">6</button>
+    <button class = 'buttToDis' type="button" (click) = "operationChosen('subtraction', '-')">&#45;</button>
+  </div>
+
+  <div class="_buuton">
+    <button type="button" (click)="nubmerClicked('1')">1</button>
+    <button type="button" (click)="nubmerClicked('2')">2</button>
+    <button type="button" (click)="nubmerClicked('3')">3</button>
+    <button class = 'buttToDis' type="button" (click) = "operationChosen('sum', '+')">&#43;</button>
+  </div>
+
+  <div class="_buuton">
+    <button class = 'buttToDis' type="button" (click)="negative()">+/-</button>
+    <button type="button" (click)="nubmerClicked('0')">0</button>
+    <button class = 'buttToDis' type="button" (click)="decimalPoint()">.</button>
+    <button class = 'buttToDis' type="button" (click)="calculate(true, '=')">&#61;</button>
+  </div>
+
+  
+</div>
