@@ -1,6 +1,6 @@
  # Calculator
 ## _Building a web-based calculator similar to that of windows_
-![Capture](Capture.png)
+![Capture](Capture.PNG)
 ## Features
 - buttons are web buttons
 - For simplicity, the difference between the C and CE buttons is ignored.
